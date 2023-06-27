@@ -5,10 +5,10 @@ function App() {
 
     await axios.get('https://api.theautring.com/api/v1/getalluser', {
       timeout: 10000,
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
-      }
+      // headers: {
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Access-Control-Allow-Methods": "POST, GET, OPTIONS"
+      // }
     })
       .then(response => {
         console.log(response);
